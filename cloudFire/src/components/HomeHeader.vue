@@ -5,8 +5,8 @@ import { RouterLink } from 'vue-router';
 <template>
   <header>
     <nav class="links-about">
-      <a href="#id">Sobre</a>
-      <a href="#id">Funcionamento</a>
+      <a href="#about">Sobre</a>
+      <a href="#rule">Funcionamento</a>
       <a href="#id">Dúvidas</a>
     </nav>
     <nav class="links-login">
