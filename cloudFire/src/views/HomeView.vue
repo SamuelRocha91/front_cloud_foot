@@ -2,6 +2,7 @@
 import HomeHeader from '../components/HomeHeader.vue'
 import MainHome from '../components/MainHome.vue'
 import AboutHome from '../components/AboutHome.vue'
+import RuleHome from '@/components/RuleHome.vue';
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import AboutHome from '../components/AboutHome.vue'
     <HomeHeader />
     <MainHome />
     <AboutHome />
+    <RuleHome />
   </main>
 </template>
