@@ -126,6 +126,17 @@
       width: 80%;
       padding: 10px 15px;
     }
+
+  #rule section {
+     display: flex;
+     width: 100%;
+    background: linear-gradient(to right, #ffffff 73.0%, #e0e4e0 70%);
+    height: 100%;
+
+  }
+  #rule img {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
