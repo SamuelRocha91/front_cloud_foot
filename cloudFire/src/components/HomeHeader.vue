@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router';
     <nav class="links-about">
       <a href="#about">Sobre</a>
       <a href="#rule">Funcionamento</a>
-      <a href="#id">Dúvidas</a>
+      <a href="#doubt">Dúvidas</a>
     </nav>
     <nav class="links-login">
       <img src="../../public/logo01.png" alt="Nuvem em chamas" />
