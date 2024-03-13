@@ -100,10 +100,7 @@ import { RouterLink } from 'vue-router';
 
    }
    .links-login img {
-      align-self: start;
-      border: 1px solid white;
-      height: 10vh;
-      width: 100%;
+     display: none;
       
    }
   }
@@ -130,7 +127,6 @@ import { RouterLink } from 'vue-router';
   @media (max-width: 760px) {
    .links-about {
     display: none;
-
    }
     .links-login {
       gap: 35px;

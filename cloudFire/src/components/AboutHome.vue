@@ -77,6 +77,12 @@
 }
 
 @media (max-width: 700px) {
+    #about section {
+      width: 100%;
+      background: linear-gradient(to right, #ffffff 73.0%, #e0e4e0 70%);
+      height: 100%;
+
+    }
      #about section h1{
       font-size: 25px;
       width: 80%;
@@ -93,6 +99,10 @@
       width: 30%;
       padding: 10px;
     }
+
+  #about img {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {

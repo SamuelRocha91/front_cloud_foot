@@ -98,10 +98,15 @@ main section button:hover{
 @media (max-width: 550px) {
  
 
-    main section button{
-      font-size: 20px;
-      width: 40%;
-      padding: 10px;
-    }
+  main section {
+     display: flex;
+     width: 100%;
+     background: linear-gradient(to right, #ffffff 73.0%, #e0e4e0 70%);
+     height: 100%;
+
+  }
+  main img {
+    display: none;
+}
 }
 </style>
