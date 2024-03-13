@@ -3,16 +3,24 @@ import { ref } from 'vue';
 
 const state = ref({
   doubtArea: '',
-  email: ''
+  email: '',
 });
+
+const handleClick = () => {
+    window.alert('Mensagem enviada com sucesso!');
+    state.value.doubtArea = '';
+    state.value.email = '';
+}
 </script>
 
 <template>
+    <div>
+    </div>
     <section id="doubt" >
         <h1>Ouvidoria</h1>
         <textarea name="doubtArea"  v-model="state.doubtArea" cols="30" rows="10" placeholder="Digite aqui sua dúvida ou sugestão"></textarea>
         <input type="text" v-model="state.email" placeholder="email">
-        <button>Enviar</button>
+        <button @click.prevent="handleClick">Enviar</button>
     </section>
 </template>
 
@@ -30,7 +38,7 @@ const state = ref({
 
 #doubt textarea {
     height: 70%;
-    width: 50%;
+    width: 50.4%;
     background: linear-gradient(to right, #ffffff 87.9%, #e0e4e0 70%);
     padding: 20px;
 }
@@ -65,6 +73,11 @@ const state = ref({
     border-radius: 10px;
     font-size: 23px;
 }
+@media (max-width: 1230px) {
+    #doubt textarea::placeholder{
+    font-size: 25px;
+}
+}
 
 @media (max-width: 1100px) {
     #doubt button {
@@ -78,6 +91,9 @@ const state = ref({
  #doubt textarea {
     background: linear-gradient(to right, #ffffff 87.1%, #e0e4e0 70%);
 
+}
+#doubt textarea::placeholder{
+    font-size: 20px;
 }
 }
 
@@ -120,10 +136,16 @@ const state = ref({
 }
    #doubt input {
     width: 82.8%;
+        background: linear-gradient(to right, #ffffff 76.1%, #e0e4e0 70%);
+
 }
 
+  #doubt  {
+    background: linear-gradient(to right, #ffffff 73.1%, #e0e4e0 70%);
+
+  }
    #doubt textarea {
-    background: linear-gradient(to right, #ffffff 73.0%, #e0e4e0 70%);
+    background: linear-gradient(to right, #ffffff 76.1%, #e0e4e0 70%);
   }
 }
 
@@ -131,9 +153,10 @@ const state = ref({
   #doubt button {
     width: 90.0%;
   }
+
    #doubt input {
     width: 83.8%;
-    background: linear-gradient(to right, #ffffff 72.5%, #e0e4e0 70%);
+    background: linear-gradient(to right, #ffffff 73.5%, #e0e4e0 70%);
 
   }
 
