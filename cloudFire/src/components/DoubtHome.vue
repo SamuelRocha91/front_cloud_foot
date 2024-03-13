@@ -7,6 +7,12 @@ const state = ref({
 });
 
 const handleClick = () => {
+    const regex = /\S+@\S+\.\S+/;
+    if (!regex.test(state.value.email)) {
+        return window.alert('É necessário digitar um email válido!');
+    } else if (state.value.doubtArea.length < 30) {
+        return window.alert('Por favor, elabore melhor seu ponto de vista');
+    }
     window.alert('Mensagem enviada com sucesso!');
     state.value.doubtArea = '';
     state.value.email = '';
