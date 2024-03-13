@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
+
+const state = ref({
+    email: "",
+    password: "",
+})
 
 </script>
 
@@ -8,8 +14,8 @@ import { RouterLink } from 'vue-router';
         <div>
             <h1>Login</h1>
             <section class="login-fields">
-              <input type="text" placeholder="example@xxxxx.com">
-              <input type="text" placeholder="senha">
+              <input v-model="state.email" type="text" placeholder="example@xxxxx.com">
+              <input v-model="state.password" type="password" placeholder="senha">
               <RouterLink id="forgot-Password" to="/login/recovery-password">Esqueceu a senha?</RouterLink>
               <button>Entrar</button>
               <RouterLink id="create-Account" to="/registro">Criar conta</RouterLink>
